@@ -101,23 +101,28 @@ h8
 <iframe src="http://bing.com" frameborder="0" width="500" height="200" scrolling="no"></iframe>
 <hr>
 <form action="http://bing.com">
-    username: <input><br>
-    password: <input type="password"><br>
-    sex: <input type="radio" name="sex"> male <input type="radio" name="sex"> female <br>
+    <input type="hidden" name="testKey" value="testValue">
+    <input disabled="disabled" placeholder="username"><br>
+    <input type="password" placeholder="password"><br>
+    birthday: <input type="date"><br>
+    sex: <input type="radio" name="sex" checked="checked"> male <input type="radio" name="sex"> female <br>
+    avatar: <input type="file"><br>
     hobbies: <input type="checkbox" name="hobbies"> TV
-    <input type="checkbox" name="hobbies"> Reading
+    <input type="checkbox" name="hobbies" checked="checked" disabled="disabled"> Reading
     <input type="checkbox" name="hobbies"> Sleep
     <input type="checkbox" name="hobbies"> Study
     <br>
-    city: <select name="city" id="">
+    city: <select name="city" id="" multiple="multiple">
     <option value="beijing">Beijing</option>
-    <option value="shanghai">Shanghai</option>
+    <option value="shanghai" selected="selected">Shanghai</option>
     <option value="guangzhou">Guangzhou</option>
 </select><br>
     intro: <textarea name="intro" cols="30" rows="5"></textarea><br>
     <input type="submit" value="sign up">
     <button>button...</button>
 </form>
+<hr>
+&copy;
 <a href="http://google.com/"><img src="image/googlelogo_color_272x92dp.png" alt="google logo" title='"test title"' border="0" height="184"></a>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <hr>
